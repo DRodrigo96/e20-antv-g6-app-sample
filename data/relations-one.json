@@ -1,0 +1,576 @@
+{
+  "tree": {
+    "id": "g1",
+    "name": "'name'1",
+    "count": 123456,
+    "label": "538.90",
+    "currency": "Yuan",
+    "rate": 1.0,
+    "status": "B",
+    "variableName": "V1",
+    "variableValue": 0.341,
+    "variableUp": false,
+    "children": [
+      {
+        "id": "g12",
+        "name": "Deal with LONG 'label' LONG 'label' LONG 'label' LONG 'label'",
+        "count": 123456,
+        "label": "338.00",
+        "rate": 0.627,
+        "status": "R",
+        "currency": "Yuan",
+        "variableName": "V2",
+        "variableValue": 0.179,
+        "variableUp": true,
+        "children": [
+          {
+            "id": "g121",
+            "name": "'name'3",
+            "collapsed": true,
+            "count": 123456,
+            "label": "138.00",
+            "rate": 0.123,
+            "status": "B",
+            "currency": "Yuan",
+            "variableName": "V2",
+            "variableValue": 0.27,
+            "variableUp": true,
+            "children": [
+              {
+                "id": "g1211",
+                "name": "'name'4",
+                "count": 123456,
+                "label": "138.00",
+                "rate": 1.0,
+                "status": "B",
+                "currency": "Yuan",
+                "variableName": "V1",
+                "variableValue": 0.164,
+                "variableUp": false,
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "g122",
+            "name": "'name'5",
+            "collapsed": true,
+            "count": 123456,
+            "label": "100.00",
+            "rate": 0.296,
+            "status": "G",
+            "currency": "Yuan",
+            "variableName": "V1",
+            "variableValue": 0.259,
+            "variableUp": true,
+            "children": [
+              {
+                "id": "g1221",
+                "name": "'name'6",
+                "count": 123456,
+                "label": "40.00",
+                "rate": 0.4,
+                "status": "G",
+                "currency": "Yuan",
+                "variableName": "V1",
+                "variableValue": 0.135,
+                "variableUp": true,
+                "children": [
+                  {
+                    "id": "g12211",
+                    "name": "'name'6-1",
+                    "count": 123456,
+                    "label": "40.00",
+                    "rate": 1.0,
+                    "status": "R",
+                    "currency": "Yuan",
+                    "variableName": "V1",
+                    "variableValue": 0.181,
+                    "variableUp": true,
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "id": "g1222",
+                "name": "'name'7",
+                "count": 123456,
+                "label": "60.00",
+                "rate": 0.6,
+                "status": "G",
+                "currency": "Yuan",
+                "variableName": "V1",
+                "variableValue": 0.239,
+                "variableUp": false,
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "g123",
+            "name": "'name'8",
+            "collapsed": true,
+            "count": 123456,
+            "label": "100.00",
+            "rate": 0.296,
+            "status": "DI",
+            "currency": "Yuan",
+            "variableName": "V2",
+            "variableValue": 0.131,
+            "variableUp": false,
+            "children": [
+              {
+                "id": "g1231",
+                "name": "'name'8-1",
+                "count": 123456,
+                "label": "100.00",
+                "rate": 1.0,
+                "status": "DI",
+                "currency": "Yuan",
+                "variableName": "V2",
+                "variableValue": 0.131,
+                "variableUp": false,
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "g13",
+        "name": "'name'9",
+        "count": 123456,
+        "label": "100.90",
+        "rate": 0.187,
+        "status": "B",
+        "currency": "Yuan",
+        "variableName": "V2",
+        "variableValue": 0.221,
+        "variableUp": true,
+        "children": [
+          {
+            "id": "g131",
+            "name": "'name'10",
+            "count": 123456,
+            "label": "33.90",
+            "rate": 0.336,
+            "status": "R",
+            "currency": "Yuan",
+            "variableName": "V1",
+            "variableValue": 0.12,
+            "variableUp": true,
+            "children": []
+          },
+          {
+            "id": "g132",
+            "name": "'name'11",
+            "count": 123456,
+            "label": "67.00",
+            "rate": 0.664,
+            "status": "G",
+            "currency": "Yuan",
+            "variableName": "V1",
+            "variableValue": 0.241,
+            "variableUp": false,
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "g14",
+        "name": "'name'12",
+        "count": 123456,
+        "label": "100.00",
+        "rate": 0.186,
+        "status": "G",
+        "currency": "Yuan",
+        "variableName": "V2",
+        "variableValue": 0.531,
+        "variableUp": true,
+        "children": []
+      }
+    ]
+  },
+  "network": {
+    "nodes": [
+      {
+        "id": "0",
+        "label": "0"
+      },
+      {
+        "id": "1",
+        "label": "1"
+      },
+      {
+        "id": "2",
+        "label": "2"
+      },
+      {
+        "id": "3",
+        "label": "3"
+      },
+      {
+        "id": "4",
+        "label": "4"
+      },
+      {
+        "id": "5",
+        "label": "5"
+      },
+      {
+        "id": "6",
+        "label": "6"
+      },
+      {
+        "id": "7",
+        "label": "7"
+      },
+      {
+        "id": "8",
+        "label": "8"
+      },
+      {
+        "id": "9",
+        "label": "9"
+      },
+      {
+        "id": "10",
+        "label": "10"
+      },
+      {
+        "id": "11",
+        "label": "11"
+      },
+      {
+        "id": "12",
+        "label": "12"
+      },
+      {
+        "id": "13",
+        "label": "13"
+      },
+      {
+        "id": "14",
+        "label": "14"
+      },
+      {
+        "id": "15",
+        "label": "15"
+      },
+      {
+        "id": "16",
+        "label": "16"
+      },
+      {
+        "id": "17",
+        "label": "17"
+      },
+      {
+        "id": "18",
+        "label": "18"
+      },
+      {
+        "id": "19",
+        "label": "19"
+      },
+      {
+        "id": "20",
+        "label": "20"
+      },
+      {
+        "id": "21",
+        "label": "21"
+      },
+      {
+        "id": "22",
+        "label": "22"
+      },
+      {
+        "id": "23",
+        "label": "23"
+      },
+      {
+        "id": "24",
+        "label": "24"
+      },
+      {
+        "id": "25",
+        "label": "25"
+      },
+      {
+        "id": "26",
+        "label": "26"
+      },
+      {
+        "id": "27",
+        "label": "27"
+      },
+      {
+        "id": "28",
+        "label": "28"
+      },
+      {
+        "id": "29",
+        "label": "29"
+      },
+      {
+        "id": "30",
+        "label": "30"
+      },
+      {
+        "id": "31",
+        "label": "31"
+      },
+      {
+        "id": "32",
+        "label": "32"
+      },
+      {
+        "id": "33",
+        "label": "33"
+      }
+    ],
+    "edges": [
+      {
+        "source": "0",
+        "target": "1"
+      },
+      {
+        "source": "0",
+        "target": "2"
+      },
+      {
+        "source": "0",
+        "target": "3"
+      },
+      {
+        "source": "0",
+        "target": "4"
+      },
+      {
+        "source": "0",
+        "target": "5"
+      },
+      {
+        "source": "0",
+        "target": "7"
+      },
+      {
+        "source": "0",
+        "target": "8"
+      },
+      {
+        "source": "0",
+        "target": "9"
+      },
+      {
+        "source": "0",
+        "target": "10"
+      },
+      {
+        "source": "0",
+        "target": "11"
+      },
+      {
+        "source": "0",
+        "target": "13"
+      },
+      {
+        "source": "0",
+        "target": "14"
+      },
+      {
+        "source": "0",
+        "target": "15"
+      },
+      {
+        "source": "0",
+        "target": "16"
+      },
+      {
+        "source": "2",
+        "target": "3"
+      },
+      {
+        "source": "4",
+        "target": "5"
+      },
+      {
+        "source": "4",
+        "target": "6"
+      },
+      {
+        "source": "5",
+        "target": "6"
+      },
+      {
+        "source": "7",
+        "target": "13"
+      },
+      {
+        "source": "8",
+        "target": "14"
+      },
+      {
+        "source": "9",
+        "target": "10"
+      },
+      {
+        "source": "10",
+        "target": "22"
+      },
+      {
+        "source": "10",
+        "target": "14"
+      },
+      {
+        "source": "10",
+        "target": "12"
+      },
+      {
+        "source": "10",
+        "target": "24"
+      },
+      {
+        "source": "10",
+        "target": "21"
+      },
+      {
+        "source": "10",
+        "target": "20"
+      },
+      {
+        "source": "11",
+        "target": "24"
+      },
+      {
+        "source": "11",
+        "target": "22"
+      },
+      {
+        "source": "11",
+        "target": "14"
+      },
+      {
+        "source": "12",
+        "target": "13"
+      },
+      {
+        "source": "16",
+        "target": "17"
+      },
+      {
+        "source": "16",
+        "target": "18"
+      },
+      {
+        "source": "16",
+        "target": "21"
+      },
+      {
+        "source": "16",
+        "target": "22"
+      },
+      {
+        "source": "17",
+        "target": "18"
+      },
+      {
+        "source": "17",
+        "target": "20"
+      },
+      {
+        "source": "18",
+        "target": "19"
+      },
+      {
+        "source": "19",
+        "target": "20"
+      },
+      {
+        "source": "19",
+        "target": "33"
+      },
+      {
+        "source": "19",
+        "target": "22"
+      },
+      {
+        "source": "19",
+        "target": "23"
+      },
+      {
+        "source": "20",
+        "target": "21"
+      },
+      {
+        "source": "21",
+        "target": "22"
+      },
+      {
+        "source": "22",
+        "target": "24"
+      },
+      {
+        "source": "22",
+        "target": "25"
+      },
+      {
+        "source": "22",
+        "target": "26"
+      },
+      {
+        "source": "22",
+        "target": "23"
+      },
+      {
+        "source": "22",
+        "target": "28"
+      },
+      {
+        "source": "22",
+        "target": "30"
+      },
+      {
+        "source": "22",
+        "target": "31"
+      },
+      {
+        "source": "22",
+        "target": "32"
+      },
+      {
+        "source": "22",
+        "target": "33"
+      },
+      {
+        "source": "23",
+        "target": "28"
+      },
+      {
+        "source": "23",
+        "target": "27"
+      },
+      {
+        "source": "23",
+        "target": "29"
+      },
+      {
+        "source": "23",
+        "target": "30"
+      },
+      {
+        "source": "23",
+        "target": "31"
+      },
+      {
+        "source": "23",
+        "target": "33"
+      },
+      {
+        "source": "32",
+        "target": "33"
+      }
+    ]
+  }
+}
