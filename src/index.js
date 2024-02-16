@@ -1,18 +1,14 @@
-
-
-// index.js
+// ./src/index.js
 // ==================================================
 import G6 from '@antv/g6';
 import insertCss from 'insert-css';
 // --------------------------------------------------
 
-// data remote url
 const groups = {
   'one': 'https://raw.githubusercontent.com/DRodrigo96/e21-antv-g6-app-sample/main/data/relations-one.json',
   'two': 'https://raw.githubusercontent.com/DRodrigo96/e21-antv-g6-app-sample/main/data/relations-two.json'
 };
 
-// => hov
 const container = document.getElementById('container-tree');
 const width = container.scrollWidth;
 const height = container.scrollHeight || 500;
@@ -64,8 +60,8 @@ const defaultNetwConfig = {
     size: 15,
   }
 }
-// => styles
-// -> tooltip styles
+
+// [NOTE] styles for tooltip
 insertCss(`
   .g6-component-tooltip {
     background-color: rgba(0,0,0, 0.65);
@@ -77,7 +73,7 @@ insertCss(`
   }
 `);
 
-// -> tooltip items
+// [NOTE] tooltip items
 const tooltip = new G6.Tooltip({
   offsetX: 20,
   offsetY: 30,
@@ -99,7 +95,7 @@ const tooltip = new G6.Tooltip({
   },
 });
 
-// -> custom node
+// [NOTE] custom node
 const registerFn = () => {
   G6.registerNode(
     'flow-rect',
@@ -128,17 +124,17 @@ const registerFn = () => {
           stroke: '#CED4D9',
           opacity: 1,
         };
-
+        
         const nodeOrigin = {
           x: -rectConfig.width / 2,
           y: -rectConfig.height / 2,
         };
-
+        
         const textConfig = {
           textAlign: 'left',
           textBaseline: 'bottom',
         };
-
+        
         const rect = group.addShape('rect', {
           attrs: {
             x: nodeOrigin.x,
@@ -146,10 +142,10 @@ const registerFn = () => {
             ...rectConfig,
           },
         });
-
+        
         const rectBBox = rect.getBBox();
-
-        // label title
+        
+        // [NOTE] label title
         group.addShape('text', {
           attrs: {
             ...textConfig,
@@ -163,8 +159,7 @@ const registerFn = () => {
           },
           name: 'name-shape',
         });
-
-        // price
+        
         const price = group.addShape('text', {
           attrs: {
             ...textConfig,
@@ -176,8 +171,8 @@ const registerFn = () => {
             opacity: 0.85,
           },
         });
-
-        // label currency
+        
+        // [NOTE] label currency
         group.addShape('text', {
           attrs: {
             ...textConfig,
@@ -189,8 +184,7 @@ const registerFn = () => {
             opacity: 0.75,
           },
         });
-
-        // percentage
+        
         const percentText = group.addShape('text', {
           attrs: {
             ...textConfig,
@@ -202,8 +196,7 @@ const registerFn = () => {
             fill: colors[status],
           },
         });
-
-        // percentage triangle
+        
         const symbol = variableUp ? 'triangle' : 'triangle-down';
         const triangle = group.addShape('marker', {
           attrs: {
@@ -215,8 +208,8 @@ const registerFn = () => {
             fill: colors[status],
           },
         });
-
-        // variable name
+        
+        // [NOTE] variable name
         group.addShape('text', {
           attrs: {
             ...textConfig,
@@ -229,8 +222,8 @@ const registerFn = () => {
             opacity: 0.45,
           },
         });
-
-        // bottom line background
+        
+        // [NOTE] bottom line background
         const bottomBackRect = group.addShape('rect', {
           attrs: {
             x: nodeOrigin.x,
@@ -241,8 +234,8 @@ const registerFn = () => {
             fill: '#E0DFE3',
           },
         });
-
-        // bottom percent
+        
+        // [NOTE] bottom percent
         const bottomRect = group.addShape('rect', {
           attrs: {
             x: nodeOrigin.x,
@@ -253,8 +246,8 @@ const registerFn = () => {
             fill: colors[status],
           },
         });
-
-        // collapse rect
+        
+        // [NOTE] collapse rectangle
         if (cfg.children && cfg.children.length) {
           group.addShape('rect', {
             attrs: {
@@ -269,8 +262,8 @@ const registerFn = () => {
             name: 'collapse-back',
             modelId: cfg.id,
           });
-
-          // collpase text
+          
+          // [NOTE] collapse text
           group.addShape('text', {
             attrs: {
               x: rectConfig.width / 2,
@@ -286,7 +279,7 @@ const registerFn = () => {
             modelId: cfg.id,
           });
         }
-
+        
         this.drawLinkPoints(cfg, group);
         return rect;
       },
@@ -379,11 +372,10 @@ const registerFn = () => {
   );
 };
 
-// => plots
+// [NOTE] plots
 var tgraph;
 var ngraph;
 
-// -> tree plot
 const treePlot = (data) => {
   if (!data) {
     return;
@@ -433,7 +425,6 @@ const treePlot = (data) => {
   tgraph.read(data);
 };
 
-// -> network plot
 const netwPlot = (data) => {
   if (!data) {
     return;
@@ -468,33 +459,27 @@ const netwPlot = (data) => {
   ngraph.read(data);
 };
 
-// => async functions
+// [NOTE] async functions
 const getVizPlots = async (group_id) => {
-  // remote call
   const url = groups[group_id];
   const response = await fetch(url);
   const jsonData = await response.json();
   
-  // data
   const treeData = jsonData.tree;
   const netData = jsonData.network;
   
-  // plotting
   treePlot(treeData);
   netwPlot(netData);
 };
 
-// => execute initial functions
+// [NOTE] execute initial functions
 registerFn();
 
-// => button listener
+// [NOTE] button event listener
 const buttonApi = document.getElementById("button-api");
-
 buttonApi.addEventListener('click', (e) => {
   const uSele = document.getElementById("selection");
   const group_id = uSele.value;
-  
-  // > plots
   getVizPlots(group_id);
 });
 

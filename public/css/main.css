@@ -1,12 +1,14 @@
 body {
   background-color: #f0f0f0;
 }
+
 #container-tree {
   margin: 2% 10%;
   background-color: #ffffff;
   border: 5px solid #c91111bd;
   height: 65%
 }
+
 #container-netw {
   margin: 2% 10%;
   background-color: #ffffff;
